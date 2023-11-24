@@ -5,6 +5,8 @@
 */
 import { ChakraProvider } from "@chakra-ui/react";
 import Layout from '../components/layouts/main'
+import Fonts from '../components/fonts'
+import theme from '../lib/theme'
 
 const Website = ({
     Component,
@@ -14,13 +16,13 @@ const Website = ({
 
 // the key prop is set to router.route to ensure that the component gets re-rendered when the route changes.
     return (
-        <ChakraProvider>
-        <Layout router={router}>
-        <Component {...pageProps} key={router.route}/>
-        </Layout>
+        <ChakraProvider theme={theme}>
+            <Fonts />
+            <Layout router={router}>
+                <Component {...pageProps} key={router.route}/>
+            </Layout>
         </ChakraProvider>
     )
 }
 
 export default Website
-
