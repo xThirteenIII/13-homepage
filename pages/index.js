@@ -58,7 +58,7 @@ const Page = () => {
             </Paragraph> 
                 <Box align="center" my={4}>
                     <NextLink href="/works">
-                        <Button rightIcon={<ChevronRightIcon />} colorScheme = {useColorModeValue('teal', 'orange')}>
+                        <Button rightIcon={<ChevronRightIcon />} colorScheme = {useColorModeValue('teal', 'teal')}>
                         Work 
                         </Button>
                     </NextLink>
@@ -105,7 +105,7 @@ const Page = () => {
                     </BioYear>
                 Worked as a Full Stack Developer at  
                 <NextLink href="/works/valuebin" legacyBehavior>
-                    <Link href="/"> Valuebin S.r.l</Link>
+                    <Link href="/"  > Valuebin S.r.l</Link>
             
                 </NextLink>.
                 </BioSelection>
@@ -121,9 +121,7 @@ const Page = () => {
                 I love
                 </Heading>
                 <Paragraph>
-                    Music, {' '}
-                <Link href="/">Taekwondo, Beach Volley, Volley,
-                </Link>
+                    Music, Taekwondo, Beach Volley, Volley, Video Games, Disney, You {'<3'}
                 </Paragraph>
             </Section>
         </Container>

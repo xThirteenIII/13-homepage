@@ -20,8 +20,8 @@ import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({ href, path, children}) => {
     const active = path === href
-    const inactiveColor = useColorModeValue('#b8b3ea', 'white')
-    return (
+    const inactiveColor = useColorModeValue('very_soft_iris', 'white')
+    eturn (
         // legacyBehaviour needed to avoid hydratation error
         <NextLink href={href} legacyBehavior>
             <Link
@@ -83,20 +83,20 @@ const Navbar = props => {
                     </LinkItem>
                 </Stack>
                 <Box flex={1} align="right">
-                <ThemeToggleButton />
+                    <ThemeToggleButton />
                     <Box ml={2} display={{base: 'inline-block', md:'none'}}>
                         <Menu>
-                            <MenuButton as={IconButton} icon={<HamburgerIcon/>} variant="outline" aria-label="Options"
+                            <MenuButton as={IconButton} icon={<HamburgerIcon/>} variant="outline" aria-label="Options" bg={useColorModeValue('very_soft_iris','dark_iris')}
                             />
-                            <MenuList>
+                            <MenuList bg={useColorModeValue('very_soft_iris','dark_iris')}>
                                 <NextLink href="/" passHref legacyBehavior>
-                                    <MenuItem as={Link}>About</MenuItem>
+                                    <MenuItem as={Link} bg={useColorModeValue('very_soft_iris','dark_iris')}>About</MenuItem>
                                 </NextLink>
                                 <NextLink href="/work" passHref legacyBehavior>
-                                    <MenuItem as={Link}>Work</MenuItem>
+                                    <MenuItem as={Link} bg={useColorModeValue('very_soft_iris','dark_iris')}>Work</MenuItem>
                                 </NextLink>
                                 <NextLink href="/projects" passHref legacyBehavior>
-                                    <MenuItem as={Link}>Projects</MenuItem>
+                                    <MenuItem as={Link} bg={useColorModeValue('very_soft_iris','dark_iris')}>Projects</MenuItem>
                                 </NextLink>
                             </MenuList>
                         </Menu>
@@ -108,4 +108,3 @@ const Navbar = props => {
 }
 
 export default Navbar
-
