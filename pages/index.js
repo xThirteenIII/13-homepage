@@ -1,4 +1,4 @@
-import { Container, Box, Heading } from '@chakra-ui/react'
+import { Container, Box, Heading, Image } from '@chakra-ui/react'
 import { GlitchText } from 'glitch-text'
 import { useColorModeValue } from '@chakra-ui/react'
 
@@ -17,6 +17,22 @@ const Page = () => {
                     </Heading>
                     <p color={useColorModeValue('orange', 'very_soft_iris')} style={{fontFamily:"Ubuntu Mono"}}> Computer Science Engineer </p>
                 </Box>
+            <Box flexShrink={0}
+                mt={{base: 4, md: 0}} 
+                ml={{md: 6}}
+                align="center"
+            >
+        <Image 
+            borderColor="whiteAlpha.800"
+            borderWidth={2}
+            borderStyle="solid"
+            maxWidth="100px"
+            display="inline-block"
+            borderRadius="full"
+            src="/images/face.jpg"
+            alt="Profile Pic"
+        />
+            </Box>
             </Box>
         </Container>
     )
