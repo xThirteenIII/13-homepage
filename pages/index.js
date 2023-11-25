@@ -1,5 +1,6 @@
 import { Container, Box, Heading, Image, useColorModeValue, Button } from '@chakra-ui/react'
 import { GlitchText } from 'glitch-text'
+import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import NextLink from 'next/link'
@@ -9,6 +10,7 @@ import { BioYear, BioSelection } from '../components/bio'
 
 const Page = () => {
     return (
+        <Layout>
         <Container>
             <Box 
             borderRadius="lg"
@@ -125,6 +127,7 @@ const Page = () => {
                 </Paragraph>
             </Section>
         </Container>
+        </Layout>
     )
 }
 

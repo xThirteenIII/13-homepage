@@ -39,7 +39,7 @@ export const ProjectsGridItem = ({
                 <Image
                 src={thumbnail}
                 alt={title}
-                height={500}
+                height={200}
                 className='grid-item-thumbnail'
                 placeholder='blur'
                 />

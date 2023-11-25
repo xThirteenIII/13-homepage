@@ -5,9 +5,11 @@ import { ProjectsGridItem } from '../components/grid-item'
 import thumbExtinguish from '../public/images/projects/extinguish.png'
 import thumbCpp from '../public/images/projects/cpp2.png'
 import thumbTkd from '../public/images/projects/tkd.png'
+import Layout from '../components/layouts/article'
 
 const Projects = () => {
     return (
+        <Layout>
         <Container>
             <Heading as="h3" fontSize={20} mb={4}>
                 Projects
@@ -34,6 +36,7 @@ const Projects = () => {
                 </Section>
             </SimpleGrid>
         </Container>
+        </Layout>
     )
 }
 
