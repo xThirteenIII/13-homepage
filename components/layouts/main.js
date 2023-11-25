@@ -1,7 +1,6 @@
 import Head from "next/head";
 import NavBar from "../navbar.js"
 import { Box, Container } from "@chakra-ui/react"
-import VoxelSpace from "../voxel-space.js";
 
 // In Next.js, the Head component is used to modify the HTML <head> tag,
 // and Box is a layout component provided by the Chakra UI library.
@@ -32,9 +31,9 @@ const Main = ({children, router}) => {
             
             <NavBar path={router.asPath} />
             <Container maxW="container.md" pt={16}>
-                <VoxelSpace />
                 {children}
             </Container>
+
         </Box>
     )
 }
