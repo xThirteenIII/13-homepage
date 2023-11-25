@@ -1,7 +1,9 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
+import { Box, Text, LinkBox, LinkOverlay, border } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
+
+// Thumbnails .png are 690x595
 
 export const GridItem = ({ 
     children,
@@ -32,11 +34,12 @@ export const ProjectsGridItem = ({
         thumbnail
 }) => (
     <Box w="100%" align="center">
-        <NextLink href={`/projects/${id}`}>
+        <NextLink href={`/projects/${id}`} legacyBehavior>
             <LinkBox cursor="pointer">
                 <Image
                 src={thumbnail}
                 alt={title}
+                height={500}
                 className='grid-item-thumbnail'
                 placeholder='blur'
                 />

@@ -21,7 +21,7 @@ import ThemeToggleButton from './theme-toggle-button'
 const LinkItem = ({ href, path, children}) => {
     const active = path === href
     const inactiveColor = useColorModeValue('very_soft_iris', 'white')
-    eturn (
+    return (
         // legacyBehaviour needed to avoid hydratation error
         <NextLink href={href} legacyBehavior>
             <Link
