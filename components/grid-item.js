@@ -55,7 +55,7 @@ export const ProjectsGridItem = ({
 export const GridItemStyle = () => (
     <Global styles={`
         .grid-item-thumbnail {
-            border-radius: 12px;
+            border-radius: 8px;
         }
     `}
     />
