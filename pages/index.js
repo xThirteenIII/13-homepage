@@ -1,12 +1,30 @@
-import { Container, Box, Heading, Image, useColorModeValue, Button } from '@chakra-ui/react'
+import { 
+    Container, 
+    Box,
+    Heading, 
+    Image, 
+    Link,
+    SimpleGrid,
+    useColorModeValue, 
+    Button, 
+    List,
+    Icon,
+    ListItem} from '@chakra-ui/react'
 import { GlitchText } from 'glitch-text'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import NextLink from 'next/link'
-import Link from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioYear, BioSelection } from '../components/bio'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { GridItem } from '../components/grid-item'
+import {
+    IoLogoInstagram,
+    IoLogoGithub,
+    IoLogoReddit,
+    IoLogoLinkedin
+} from 'react-icons/io5'
 
 const Page = () => {
     return (
@@ -52,16 +70,16 @@ const Page = () => {
 
             <Section delay={0.1}>
                 <Heading as="h3" variant="section-title">
-                 Work
+                 Projects
                 </Heading>
                 <Paragraph>
                 Hi, this site was made to learn and get confidence with React and at the same time to create a sort of online CV. 
-        I recently graduated @ Politecnico di Milano in Engineering of Computying Systems. My studies were both focused on Telecommunications and Computer Science. Last year I worked as a Full Stack Developer which put me on the road of programming, although my dream is to be able to work with both the Telecom and Computer Science worlds. 
+        I recently graduated @ Politecnico di Milano in Engineering of Computying Systems. My studies were both focused on Telecommunications and Computer Science. Last year I worked as a Full Stack Developer which put me on the road of programming, although my dream is to be able to work with both the Telecom and Computer Science worlds.
             </Paragraph> 
                 <Box align="center" my={4}>
-                    <NextLink href="/works">
+                    <NextLink href="/projects">
                         <Button rightIcon={<ChevronRightIcon />} colorScheme = {useColorModeValue('teal', 'teal')}>
-                        Work 
+                        projects 
                         </Button>
                     </NextLink>
                 </Box>
@@ -105,9 +123,11 @@ const Page = () => {
                     <BioYear>
                     2022
                     </BioYear>
-                Worked as a Full Stack Developer at  
-                <NextLink href="/works/valuebin" legacyBehavior>
-                    <Link href="/"  > Valuebin S.r.l</Link>
+                Worked as a Full Stack Developer at Valuebin S.r.l on
+                <NextLink href="https://zeroed.earth" legacyBehavior>
+                    <Link> Zeroed
+                            <ExternalLinkIcon mx="2px" />
+        </Link>
             
                 </NextLink>.
                 </BioSelection>
@@ -123,9 +143,44 @@ const Page = () => {
                 I love
                 </Heading>
                 <Paragraph>
-                    Music, Taekwondo, Beach Volley, Volley, Video Games, Disney, You {'<3'}
+                    Piano, Programming (too cheesy?) , Taekwondo, Beach Volley, Volley, Video Games, Disney, You {'<3'}
                 </Paragraph>
             </Section>
+        <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+            On the web
+        </Heading>
+        <List>
+            <ListItem>
+                <Link href="https://www.linkedin.com/in/giusepperichetti/" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoLinkedin} />} >
+                @Giuseppe Richetti
+                </Button>
+                </Link>
+            </ListItem>
+            <ListItem>
+                <Link href="https://github.com/xThirteenIII" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub} />} >
+                @xThirteenIII
+                </Button>
+                </Link>
+            </ListItem>
+            <ListItem>
+                <Link href="https://instagram.com/jisaa_" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoInstagram} />} >
+                @jisaa_
+                </Button>
+                </Link>
+            </ListItem>
+            <ListItem>
+                <Link href="https://reddit.com/u/XThirteenIII" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoReddit} />} >
+                @XThirteenIII
+                </Button>
+                </Link>
+            </ListItem>
+        </List>
+        </Section>
         </Container>
         </Layout>
     )

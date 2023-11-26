@@ -31,11 +31,7 @@ github.com/xThirteenIII/tkd-site
                     </ListItem>
                     <ListItem>
                         <Meta>Stack</Meta>
-                        <span>c++</span>
-                    </ListItem>
-                    <ListItem>
-                        <Meta>Design Patterns</Meta>
-                        <span>Singleton, State, Factory, Abstract </span>
+                        <span>HTML, CSS, JavaScript</span>
                     </ListItem>
                     <ListItem>
                         <Meta>Version Control</Meta>

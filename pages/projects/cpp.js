@@ -34,6 +34,10 @@ xthirteeniii.github.io/tkd-site/
                         <span>c++</span>
                     </ListItem>
                     <ListItem>
+                        <Meta>Platform</Meta>
+                        <span>Linux, Mac OS</span>
+                    </ListItem>
+                    <ListItem>
                         <Meta>Design Patterns</Meta>
                         <span>Singleton, State, Factory, Abstract </span>
                     </ListItem>
