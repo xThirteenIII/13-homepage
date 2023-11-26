@@ -74,7 +74,7 @@ const Page = () => {
                 </Heading>
                 <Paragraph>
                 Hi, this site was made to learn and get confidence with React and at the same time to create a sort of online CV. 
-        I recently graduated @ Politecnico di Milano in Engineering of Computying Systems. My studies were both focused on Telecommunications and Computer Science. Last year I worked as a Full Stack Developer which put me on the road of programming, although my dream is to be able to work with both the Telecom and Computer Science worlds.
+        I recently graduated @ Politecnico di Milano in Engineering of Computying Systems. My studies were both focused on Telecommunications and Computer Science. Last year I worked as a Full Stack Developer which put me on the road to programming, although my dream is to be able to work with both the Telecom and Computer Science worlds.
             </Paragraph> 
                 <Box align="center" my={4}>
                     <NextLink href="/projects">
