@@ -6,41 +6,42 @@ import Layout from '../../components/layouts/article'
 
 const Project = () => {
     return (
-        <Layout title="c++ Console Game">
+        <Layout title="6502 Cpu Emulator">
             <Container>
                 <Title>
-                c++ Console Game
+                6502 Emulator
                 </Title>
                 <P>
-                A turn-based console game featuring, for the time being, one floor and one enemy. The main goal of this project was to learn c++ and its most common design patterns. It was kinda hard to jump into it without knowing c++ in the first place but at the end of it it was worth it.
+                A 6502 cpu emulator. The intent was to better understand how cpu works and handles instructions, dealing with memory and opcodes.
+                Implementing each instruction with each addressing mode to make programs actually work on the emulator.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Repository</Meta>
-                        <Link href='https://github.com/xThirteenIII/cpp-console-game'>
-        github.com/xThirteenIII/cpp-console-game
+                        <Link href='https://github.com/xThirteenIII/6502-emulator'>
+        github.com/xThirteenIII/6502-emulator
                             <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Stack</Meta>
-                        <span>c++</span>
+                        <span>go</span>
                     </ListItem>
                     <ListItem>
                         <Meta>Platform</Meta>
                         <span>Linux, Mac OS</span>
                     </ListItem>
                     <ListItem>
-                        <Meta>Design Patterns</Meta>
-                        <span>Singleton, State, Factory, Abstract </span>
+                        <Meta>References</Meta>
+                        <span> http://www.6502.org/users/obelisk/</span>
+                        <span> https://sta.c64.org/cbm64mem.html</span>
+                        <span> https://www.c64-wiki.com/wiki/Reset_(Process)</span>
                     </ListItem>
                     <ListItem>
                         <Meta>Version Control</Meta>
                         <span>Git, Lazygit</span>
                     </ListItem>
                 </List>
-                <ProjectImage src="/images/projects/cpp.png" alt="Extinguish-Us" />
-                <ProjectImage src="/images/projects/cpp2.png" alt="Extinguish-Us" />
             </Container>
         </Layout>
     )

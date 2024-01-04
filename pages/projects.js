@@ -35,6 +35,11 @@ const Projects = () => {
                     A website prototype for the ICTF Segrate association where I practice Taekwondo and Kickboxing. 태권!
                     </ProjectsGridItem>
                 </Section>
+                <Section>
+                    <ProjectsGridItem id="emulator" title="6502 Emulator" thumbnail={thumbEmulator}>
+                    An emulator for the 8-bit 6502 cpu from 1975.
+                    </ProjectsGridItem>
+                </Section>
             </SimpleGrid>
         </Container>
         </Layout>
