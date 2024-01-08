@@ -33,9 +33,19 @@ const Project = () => {
                     </ListItem>
                     <ListItem>
                         <Meta>References</Meta>
-                        <span> http://www.6502.org/users/obelisk/</span>
-                        <span> https://sta.c64.org/cbm64mem.html</span>
-                        <span> https://www.c64-wiki.com/wiki/Reset_(Process)</span>
+                        <Link href='http://www.6502.org/users/obelisk/'>
+http://www.6502.org/users/obelisk/
+                            <ExternalLinkIcon mx="2px" />
+                        </Link>
+                        <Link href='https://sta.c64.org/cbm64mem.html'>
+https://sta.c64.org/cbm64mem.html
+                            <ExternalLinkIcon mx="2px" />
+                        </Link>
+                        <p/>
+                        <Link href='https://www.c64-wiki.com/wiki/Reset_(Process)'>
+https://www.c64-wiki.com/wiki/Reset_(Process)
+                            <ExternalLinkIcon mx="2px" />
+                        </Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Version Control</Meta>
